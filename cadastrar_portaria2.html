@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Sidebar 01</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style2.css">
+  </head>
+  <body>
+    
+    <div class="wrapper d-flex align-items-stretch">
+      <nav id="sidebar">
+        <div class="p-4 pt-5">
+          <a href="#" class="img logo rounded-circle mb-5" style="background-image: url(images/logo.jpg);"></a> 
+          <font color="#ced876">Online </font><img src="images/online.png" width="10" height="10"> <br>
+          Seja bem-vindo(a), </font><br>
+          Fernanda Souza.</font> <br> <br> 
+          <ul class="list-unstyled components mb-5">
+            <li class="active">
+
+
+              <li>
+                <a href="index_main.html">Início</a>
+            
+              <li>
+
+             <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Portaria de Estágio Probatório</a>
+             
+              <ul class="collapse list-unstyled" id="homeSubmenu">
+
+                <li>
+                    <a href="cadastrar_portaria.html">Cadastrar</a>
+                </li>
+
+                <li>
+                    <a href="consultar_portaria.html">Consultar</a> 
+                </li>
+               
+              </ul>
+
+
+              <a href="#homeSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Plano de Trabalho</a>
+             
+              <ul class="collapse list-unstyled" id="homeSubmenu2">
+
+                <li>
+                    <a href="cadastrar_plano.html">Cadastrar</a>
+                </li>
+
+                <li>
+                    <a href="consultar_plano.html">Consultar</a> 
+                </li>
+               
+              </ul>
+           <li>
+                <a href="index.html">Sair</a>
+            
+            <li>
+
+          </ul>
+
+          <div class="footer">
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos direitos reservados. Dantas Software.
+              <!--| This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a> --
+               Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+
+        </div>
+      </nav>
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+
+            <button type="button" id="sidebarCollapse" class="btn btn-primary">
+              <i class="fa fa-bars"></i>
+              <span class="sr-only">Toggle Menu</span>
+            </button>
+            <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index_main.html">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Sair</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <h2 class="mb-4">Cadastrar Portaria de Estágio Probatório</h2>
+        <p>Realize o cadastro das informações das portarias de estágio probatório do servidor selecionado.</p>
+        <p>Para confirmação do cadastro será necessário informar sua senha de acesso.
+        <br><br>
+
+        <form>
+        <h5>Dados do Servidor</h5>
+        <div style="border: 10px solid;">
+        <div style="margin-left: 10px; margin-right: 10px">
+        <b>Matrícula SIAPE: </b>1234567 <br>
+        <b>Nome do Servidor: </b>Alfredo de Mendonça Vieira <br>
+        <b>Unidade de Exercício: </b>Superintendência de Tecnologia da Informação <br>
+        <b>Gestor de Unidade: </b>Fernanda Santos Souza <br>
+        </div>
+        </div> 
+
+        <br>
+        <h5>Informações da portaria</h5>
+
+        <div style="border: 10px solid;">
+
+         <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
+          
+          <label for="portaria">Selecione o tipo de portaria: </label> 
+
+          
+         <div class="custom-control custom-radio custom-control-inline" style="margin-left: 50px;">
+              <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+              <label class="custom-control-label" for="customRadioInline1">Portaria de Tutor</label>
+        </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+              <label class="custom-control-label" for="customRadioInline2">Portaria de Comissão</label>
+            </div>
+          <br>
+                
+         <div class="form-group row">
+            <label for="inputtutor" class="col-sm-1 col-form-label">Nome do Tutor:</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputtutor" style="width: 500px">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Texto da Portaria:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+           
+          </div>  
+        </div> 
+
+        <br>
+
+        
+         <div style="text-align: center; width: 200px; margin-left: 780px; margin-right: 780px">
+
+          <div class="form-group">
+              <label for="exampleInputPassword1"><b>Senha de confirmação</b></label>
+              <input type="password" class="form-control" id="exampleInputPassword1""> 
+          </div>
+
+          <button type="submit" class="btn btn-primary">Confirmar Cadastro</button> 
+              
+        </div> 
+
+
+       
+        </form>
+      
+      </div>
+    </div>
+
+
+
+    <script src="js/jquery2.min.js"></script>
+    <script src="js/popper2.js"></script>
+    <script src="js/bootstrap2.min.js"></script>
+    <script src="js/main2.js"></script>
+  </body>
+</html>
