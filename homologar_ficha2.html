@@ -19,23 +19,36 @@
 		  		<font color="#ced876">Online </font><img src="images/online.png" width="10" height="10"> <br>
 		  		Seja bem-vindo(a), </font><br>
 		  		Fernanda Souza.</font> <br> <br> 
-
 	        <ul class="list-unstyled components mb-5">
-
 	          <li class="active">
+
 
               <li>
                 <a href="index_main.html">Início</a>
             
               <li>
 
-              
-              <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Portaria de Estágio Probatório</a>
+             <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Portaria de Estágio Probatório</a>
              
               <ul class="collapse list-unstyled" id="homeSubmenu">
 
                 <li>
                     <a href="cadastrar_portaria.html">Cadastrar</a>
+                </li>
+
+                <li>
+                    <a href="consultar_portaria.html">Consultar</a> 
+                </li>
+               
+              </ul>
+
+
+              <a href="#homeSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Plano de Trabalho</a>
+             
+              <ul class="collapse list-unstyled" id="homeSubmenu2">
+
+                <li>
+                    <a href="cadastrar_plano.html">Cadastrar</a>
                 </li>
 
                 <li>
@@ -45,25 +58,29 @@
               </ul>
 
 
-	            <a href="#homeSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Plano de Trabalho</a>
-	           
-              <ul class="collapse list-unstyled" id="homeSubmenu2">
+               <a href="#homeSubmenu3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Ficha de Acompanhamento</a>
+             
+              <ul class="collapse list-unstyled" id="homeSubmenu3">
 
                 <li>
-                    <a href="cadastrar_plano.html">Cadastrar</a>
+                    <a href="cadastrar_ficha.html">Cadastrar</a>
                 </li>
 
                 <li>
-                    <a href="consultar_plano.html">Consultar</a>	
+                    <a href="consultar_ficha.html">Consultar</a>  
                 </li>
-               
-	            </ul>
-	         <li>
+
+                <li>
+                    <a href="homologar_ficha.html">Homologar</a>  
+                </li>
+
+              </ul>
+           <li>
                 <a href="index.html">Sair</a>
             
             <li>
 
-	        </ul>
+          </ul>
 
 	        <div class="footer">
 	        	<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
@@ -102,53 +119,68 @@
           </div>
         </nav>
 
-   <h2 class="mb-4">Cadastrar Portaria de Estágio Probatório</h2>
-        <p >Utilize esta funcionalidade para realizar o cadastro das portarias de estágio probatório dos servidores em exercício na sua unidade de responsabilidade: <b>Superintendência de Tecnologia da Informação</b>.</p>
-        <P> Selecione abaixo um dos servidores habilitados para cadastro da portaria: </P>
+        <h2 class="mb-4">Homologar Ficha de Acompanhamento de Estágio Probatório</h2>
+        <p>Realize a homologação da ficha de acompanhamento do estágio probatório, através dessa página.</p>
+        <p>Para confirmação do cadastro será necessário informar sua senha de acesso.
+        <br><br>
+
+        <form>
+        <h5>Dados do Servidor</h5>
+        <div style="border: 10px solid;">
+        <div style="margin-left: 10px; margin-right: 10px">
+        <b>Matrícula SIAPE: </b>1234567 <br>
+        <b>Nome do Servidor: </b>Alfredo de Mendonça Vieira <br>
+        <b>Tutor: </b>Max Fernandes de Carvalho <br>
+        <b>Unidade de Exercício: </b>Superintendência de Tecnologia da Informação <br>
+        <b>Gestor de Unidade: </b>Fernanda Santos Souza <br>
+        </div>
+        </div> 
+
+        <br>
+        <h5>Informações da ficha de acompanhamento:</h5>
+        <div style="border: 10px solid;">
+        <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
+          <label for="atividades"><b>Itens de Avaliação:</b></label>
+                    
+           <ul>
+            <li>Comparecimento ao Trabalho: Acima do Esperado</li>
+            <li>Pontualidade: Dentro do Esperado</li>
+            <li>Proatividade: Insuficiente</li>
+            
+            </ul>
+      
+        <label for="atividades"><b> Informações adicionais do desempenho do servidor:</b></label>
+         
+            <ul>
+            <li> Servidor vem desempenhando suas funções com bastante qualidade dentro das atribui do seu cargo.</li>
+            
+            
+            </ul>
+
+          </div>  
+        </div> 
+
         <br>
 
-        <div>
+         <div style="text-align: center; width: 200px; margin-left: 780px; margin-right: 780px">
 
-         <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Nome do Servidor</th>
-              <th scope="col">Data de Admissão</th>
-              <th scope="col">Cargo</th>
-              <th scope="col">Ação</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Alfredo de Mendonça Vieira (1234567)</td>
-              <td>15/01/2020</td>
-              <td>Assistente em Administração</td>
-              <td><a href = "cadastrar_portaria2.html"><img src = "images/select.jpg" alt="Selecionar Servidor" heigth="30" width="30"></a></td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>José Vieira de Miranda (1234589)</td>
-              <td>28/06/2020</td>
-              <td>Técnico em Tecnologia da Informação</td>
-              <td><a href = "cadastrar_portaria2.html"><img src = "images/select.jpg" alt="Selecionar Servidor" heigth="30" width="30"></a></td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Manoel de Souza Santos (6769568)</td>
-              <td>12/03/2021</td>
-              <td>Analista de Sistemas da Informação</td>
-              <td><a href = "cadastrar_portaria2.html"><img src = "images/select.jpg" alt="Selecionar Servidor" heigth="30" width="30"></a></td>
-            </tr>
-          </tbody>
-        </table>
+          <div class="form-group">
+              <label for="exampleInputPassword1"><b>Senha de confirmação</b></label>
+              <input type="password" class="form-control" id="exampleInputPassword1""> 
+          </div>
 
-        </div>       
+          <button type="submit" class="btn btn-primary">Confirmar Cadastro</button> 
+              
+        </div>  
 
+
+       
+        </form>
       
       </div>
-    </div>
+		</div>
+
+
 
     <script src="js/jquery2.min.js"></script>
     <script src="js/popper2.js"></script>
